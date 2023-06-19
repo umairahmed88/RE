@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -21,9 +22,98 @@ body {
 }
 
 ul li a {
-	@apply rounded py-[7px] px-[13px] text-[17px] hover:bg-[#3D7EA7] transition-all duration-300;
+	@apply rounded py-[7px] px-[13px] text-[17px] hover:bg-[#B70F23] transition-all duration-300;
 }
 
 #check:checked ~ ul {
 	left: 0;
+}
+
+ul li {
+	padding: 5px;
+}
+
+ul li img {
+	width: 300px;
+	height: 300px;
+	border-radius: 4px;
+	margin: 20px auto;
+	display: block;
+}
+
+ul li h1,
+ul li p span {
+	font-weight: bold;
+}
+
+ul li p a:hover {
+	color: white;
+}
+
+@media (min-width: 768px) {
+	ul li div {
+		margin: 0 auto;
+		max-width: 700px;
+	}
+
+	ul li div p {
+		margin: 60px;
+	}
+
+	ul li h1 {
+		margin-left: 5%;
+		text-align: center;
+	}
+
+	ul li p img {
+		width: 400px;
+		height: 350px;
+		border-radius: 16px;
+		margin: 20px auto;
+		display: block;
+		margin: 0 100px;
+	}
+}
+
+@keyframes spin-xy {
+	0% {
+		transform: rotateX(0);
+	}
+	50% {
+		transform: rotateX(1turn);
+	}
+	100% {
+		transform: rotateX(1turn) rotateY(1turn);
+	}
+}
+
+.animate-spin-xy {
+	animation: spin-xy 8s infinite linear;
+}
+
+.shadow-white {
+	box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
+}
+
+@keyframes fadeInWords {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.word-by-word-animation {
+	display: inline-block;
+	white-space: pre-wrap;
+	max-width: 100%;
+	overflow-wrap: break-word;
+}
+
+.word-by-word-animation span {
+	display: inline-block;
+	opacity: 0;
+	animation: fadeInWords 0.5s ease-in-out forwards;
+	animation-delay: calc(0.1s * var(--index));
 }

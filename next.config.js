@@ -1,4 +1,15 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
-
-module.exports = nextConfig
+module.exports = {
+	purge: [],
+	darkMode: false,
+	theme: {
+		extend: {
+			fontFamily: {
+				dancing: ["Dancing Script", "cursive"],
+			},
+		},
+	},
+	variants: {
+		extend: {},
+	},
+	plugins: [],
+};
