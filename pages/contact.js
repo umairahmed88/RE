@@ -37,15 +37,18 @@ function ContactPage() {
 					<BiPhoneCall className='mr-32' /> +92-331-3877771
 				</p>
 
-				<div className='flex items-center'>
-					<HiOutlineMail className='text-2xl' />
-					<p className='ml-2'>
-						Email Us at <br /> rehanbali2000@yahoo.com
-					</p>
+				<div className='items-center'>
+					<div className='flex'>
+						<HiOutlineMail className='text-2xl' />
+						Email Us at:
+					</div>
+					rehanbali2000@yahoo.com
 				</div>
 
-				<div className='flex items-center text-red-100 mt-10'>
-					<p className='mr-2'>Want to discuss something on WhatsApp</p>
+				<div className='flex items-center mt-10'>
+					<p className='mr-2 font-bold text-xl'>
+						Want to discuss something on WhatsApp
+					</p>
 					<div className='text-green-600 cursor-pointer bg-white rounded-full'>
 						<SiWhatsapp
 							onClick={handleWhatsAppClick}
