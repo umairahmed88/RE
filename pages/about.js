@@ -2,7 +2,7 @@ import React from "react";
 
 const about = () => {
 	return (
-		<div className="bg-[url('../assets/About.jpg')] w-screen min-h-screen bg-cover bg-no-repeat bg-center top-0 font-bold text-yellow-100">
+		<div className='w-screen bg-image min-h-screen bg-cover bg-no-repeat bg-center top-0 font-bold text-yellow-100'>
 			<div className='md:bg-white  mx-auto md:max-w-xs md:p-2 md:border-black md:border-4'>
 				<h1 className='m-5 bg-white md:bg-transparent text-3xl mx-auto text-center text-red-400'>
 					About Us

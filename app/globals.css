@@ -117,3 +117,10 @@ ul li p a:hover {
 	animation: fadeInWords 0.5s ease-in-out forwards;
 	animation-delay: calc(0.1s * var(--index));
 }
+
+.bg-image {
+	background-image: url("/About.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
