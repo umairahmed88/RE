@@ -6,7 +6,7 @@ import { SiWhatsapp } from "react-icons/si";
 import "typeface-dancing-script";
 
 function ContactPage() {
-	const [phoneNumber, setPhoneNumber] = useState("");
+	const phoneNumber = "+92-300-3563848"; // Set the phone number here
 
 	const handleWhatsAppClick = () => {
 		const messageText = `Hi, I'm interested in your services. Can we discuss further?`;
@@ -45,7 +45,7 @@ function ContactPage() {
 					rehanbali2000@yahoo.com
 				</div>
 
-				<div className='flex items-center mt-10'>
+				<div className='flex flex-wrap items-center mt-10'>
 					<p className='mr-2 font-bold text-xl'>
 						Want to discuss something on WhatsApp
 					</p>
