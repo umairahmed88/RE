@@ -10,10 +10,8 @@ const Map = () => {
 
 		if (typeof window !== "undefined") {
 			const L = require("leaflet");
-			// Create a map instance
 			map = L.map(mapContainerRef.current).setView([24.883592, 67.166726], 13);
 
-			// Add a tile layer
 			L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 				attribution: "",
 			}).addTo(map);
@@ -35,7 +33,6 @@ const Map = () => {
 		}
 
 		return () => {
-			// Clean up the map instance
 			if (map) {
 				map.remove();
 			}

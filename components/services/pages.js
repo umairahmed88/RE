@@ -1,6 +1,5 @@
 import React from "react";
-import { BackButton } from "../index";
-import { WordAnimations } from "../index";
+import { BackButton, WordAnimations } from "../index";
 
 const Pages = ({ data, pageTitle, children }) => {
 	const textRef = WordAnimations(`Our ${pageTitle}`);
@@ -32,11 +31,11 @@ const Pages = ({ data, pageTitle, children }) => {
 							>
 								<span>{service.title}</span>
 								{service.description}
-								{service.link ? (
+								{service.link && (
 									<>
 										Visit {service.title} <a href={service.link}>here</a>
 									</>
-								) : null}
+								)}
 								<img alt={service.title} src={service.image} />
 							</p>
 						</div>

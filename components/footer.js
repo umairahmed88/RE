@@ -1,17 +1,17 @@
 import React from "react";
 
-const Navbar = () => {
+const Footer = () => {
 	return (
-		<div className='text-white bg-[#B70F23]'>
-			<div className='flex items-center justify-center'>
-				<div className='sm:m-3 '>
-					<p className=''>
+		<footer className='bg-[#B70F23] text-white py-4'>
+			<div className='container mx-auto px-4'>
+				<div className='flex items-center justify-center'>
+					<p className='text-center text-sm'>
 						&copy; 2023 Rehan Enterprises. All rights reserved.
 					</p>
 				</div>
 			</div>
-		</div>
+		</footer>
 	);
 };
 
-export default Navbar;
+export default Footer;

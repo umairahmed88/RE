@@ -1,8 +1,8 @@
-import logoImage from "/public/RE.jpg"; // Replace with the path to your logo JPG file
 import React from "react";
 import Head from "next/head";
+import { Footer, Navbar, ScrollToTopButton, Spinner } from "@/components";
+import logoImage from "/public/RE.jpg"; // Replace with the path to your logo JPG file
 import "../app/globals.css";
-import { Footer, Navbar, ScrollToTopButton, Spinner } from "@/components/index";
 
 function MyApp({ Component, pageProps }) {
 	const ogImageUrl = logoImage;
@@ -13,6 +13,7 @@ function MyApp({ Component, pageProps }) {
 				<link rel='icon' type='image/png' href='/favicon.jpg' />
 				<title>RE Services</title>
 				<meta property='og:image' content={ogImageUrl} />
+				{/* Add other necessary meta tags */}
 			</Head>
 			<Navbar />
 			<Component {...pageProps} />
